@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=simple
 RemainAfterExit=yes
-ExecStart="/usr/local/bin/drive-script/startup_script.sh"
+ExecStart="/usr/local/bin/drive-service/startup_script.sh"
 TimeoutStartSec=0
 
 [Install]
