@@ -1,0 +1,5 @@
+network:
+  enp0s31f6:
+    - address: 192.186.0.0/24
+      gateway: 192.168.0.1
+      dns: 1.1.1.1
