@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer for snap webpage configuration
+
+[Timer]
+AccuracySec=1s
+OnUnitActiveSec=5s
+OnStartupSec=5s
+Unit=snap-webpage.service
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=Starts USB mount service
+After=network.target
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart="/usr/local/bin/startup/network-mount/systemd/network-mount.sh"
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target

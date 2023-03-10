@@ -1,0 +1,45 @@
+<!-- References
+    https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader
+    https://stackoverflow.com/questions/19461521/how-to-center-an-element-horizontally-and-vertically
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    }
+
+    .loader {
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid #3498db;
+      width: 120px;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite; /* Safari */
+      animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <h1 style="font-family:'Trebuchet MS', sans-serif;">Waiting for Gateway to Start</h1>
+        <span class="loader"></span>
+    </div>
+</body>
+</html>

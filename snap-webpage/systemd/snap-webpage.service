@@ -1,0 +1,7 @@
+[Unit]
+Description=Configures snap webpage accordingly to Ignition Gateway status
+
+[Service]
+ExecStart="/usr/local/bin/startup/snap-webpage/systemd/snap-webpage.sh"
+# Restart=always
+# RestartSec=5
